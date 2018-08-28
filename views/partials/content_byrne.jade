@@ -1,0 +1,13 @@
+ul.list-group
+  // services
+  if app_visitors
+    each visitor,i in app_visitors
+      li.list-group-item.pln
+        .row.man
+          .col-xs-3.col-sm-3.col-md-3.col-lg-3.phxl
+            span.h1.pan.man.fa.fa-icon.fa-database.type-neutral-5(style='left: 0px; position: relative;')
+          .col-xs-5.col-sm-5.col-md-5.col-lg-5
+            .type-neutral-4.small
+              .type-ellipsis NAME
+            .type-ellipsis #{visitor.name}
+
